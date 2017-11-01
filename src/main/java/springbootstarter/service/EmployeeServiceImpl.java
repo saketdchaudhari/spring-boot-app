@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import springbootstarter.jpa.entity.Employee;
@@ -34,7 +35,11 @@ public class EmployeeServiceImpl implements IEmployeeService{
 
 	@Override
 	public void deleteEmployee(Long id) {
-		repository.delete(id);
+		try {
+			repository.delete(id);
+		} catch(EmptyResultDataAccessException e) {
+			// No record present.
+		}
 	}
 	
 }

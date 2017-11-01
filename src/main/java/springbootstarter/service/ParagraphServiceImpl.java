@@ -25,7 +25,6 @@ public class ParagraphServiceImpl implements IParagraphService {
 		List<String> words = Arrays.asList(paragraph.split("\\s+"));
 		Map<String, WordCount> wordCounts = new HashMap<>();
 		for (String word : words) {
-			System.out.println("word " + word);
 			if (wordCounts.containsKey(word)) {
 				WordCount wordCnt = wordCounts.get(word);
 				wordCnt.setCount(wordCnt.getCount() + 1);
