@@ -8,7 +8,7 @@ Read this file to understand how to setup the application on local and execute c
   1. Import the code on local drive.
   2. Open cmd prompt on local and cd to the path of directory where code is imported.
   3. Run the command **mvn clean install** to build the application and run the tests.
-  4. Once the build finishes successfully run the command **java -jar *************************** to start the application          
+  4. Once the build finishes successfully run the command **mvn spring-boot:run** to start the application          
   5. Once the server starts successfully the application should be up and running on port 9090 (default configured port in               application.properties)
 
 # B. Below are curl commands to call different endpoints
