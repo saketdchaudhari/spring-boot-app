@@ -5,7 +5,7 @@ Read this file to understand how to setup the application on local and execute c
 
 # A. Steps to setup the application and run maven build.
 
-  1. Import the code on local drive.
+  1. Import/git clone the code on local drive.
   2. Open cmd prompt on local and cd to the path of directory where code is imported.
   3. Run the command **mvn clean install** to build the application and run the tests.
   4. Once the build finishes successfully run the command **mvn spring-boot:run** to start the application          
